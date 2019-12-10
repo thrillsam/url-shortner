@@ -7,7 +7,7 @@
 	* ruby 2.4
 
 2. setup
-
+	* git clone https://github.com/thrillsam/url-shortner.git
 	* rails db:setup
 	* EDITOR=vim rails credentials:edit
 	* add below line and save

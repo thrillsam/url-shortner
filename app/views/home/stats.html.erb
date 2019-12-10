@@ -1,0 +1,10 @@
+Analytics <br><br>
+<% @urls.each do |url| %>
+	<%= url.long_url %><br>
+	<%= url.short_url %><br><br>
+
+	Total Clicks: <%= url.url_infos.count %><br>
+	Ip addresses: <%= url.url_infos.pluck(:ip_address).join(',')%><br>
+	Top Counties: <%= url.url_infos.pluck(:country).join(',')%>
+	<hr>
+<% end %>
